@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/store_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:gravity="center"
+                android:text="친환경 매장 정보"
+                android:textColor="#000000"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/jigu_layer"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/jigu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16"
+                    android:text="제로 웨이스트샵 지구"
+                    android:textColor="#F0222121"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/loca_jg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16"
+                    android:layout_marginTop="6"
+                    android:text="서울특별시 성대로 1길 16"
+                    android:textColor="#BC222121"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/link_jg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16"
+                    android:layout_marginTop="6"
+                    android:autoLink="web"
+                    android:text="온라인 스토어 : https://smartstore.naver.com/peaceontable \ninstagram : https://www.instagram.com/zerowaste_jigu/"
+                    android:textColor="#BC222121"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thepicker_layer"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/thepicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16"
+                    android:text="the picker 더피커"
+                    android:textColor="#F0222121"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/loca_tp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16"
+                    android:layout_marginTop="6"
+                    android:text="이전 중"
+                    android:textColor="#BC222121"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/link_tp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16"
+                    android:layout_marginTop="6"
+                    android:autoLink="web"
+                    android:text="온라인 스토어 : https://thepicker.net/ \ninstagram : https://www.instagram.com/thepicker/"
+                    android:textColor="#BC222121"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ssssl_layer"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/ssssl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16"
+                    android:text="제로웨이스트 라이프스타일 매거진 ssssl"
+                    android:textColor="#F0222121"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/link_sl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16"
+                    android:layout_marginTop="6"
+                    android:autoLink="web"
+                    android:text="온라인 스토어 : https://smartstore.naver.com/ssssl \ninstagram : https://www.instagram.com/magazine.ssssl/"
+                    android:textColor="#BC222121"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
