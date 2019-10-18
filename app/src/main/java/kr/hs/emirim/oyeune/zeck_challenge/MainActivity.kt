@@ -11,13 +11,27 @@ import android.support.v4.app.SupportActivity.ExtraData
 import android.support.v4.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.view.Menu
+import android.widget.TextView
+import java.text.SimpleDateFormat
+import java.util.Date
 
 
 class MainActivity : AppCompatActivity() {
+    internal var now = System.currentTimeMillis()
+    // 현재시간을 date 변수에 저장한다.
+    internal var date = Date(now)
+    // 시간을 나타냇 포맷을 정한다 ( yyyy/MM/dd 같은 형태로 변형 가능 )
+    internal var sdfNow = SimpleDateFormat("yyyy/MM/dd ")
+    // nowDate 변수에 값을 저장한다.
+    internal var formatDate = sdfNow.format(date)
 
+    internal lateinit var dateNow: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        dateNow = findViewById(R.id.dateText) as TextView
+        dateNow.setText(formatDate)
 
         button1.setOnClickListener {
             startActivity(Intent(this@MainActivity, AnalysisActivity::class.java))
@@ -32,8 +46,6 @@ class MainActivity : AppCompatActivity() {
         //actionBar.setDisplayShowTitleEnabled(false)
         actionBar.setDisplayHomeAsUpEnabled(true)
         actionBar.setHomeAsUpIndicator(R.drawable.menu);
-
-
 
         /*@Override
         public boolean onCreateOptionsMenu(Menu menu) {

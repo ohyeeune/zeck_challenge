@@ -9,7 +9,7 @@ class SplashActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.)
+        //setContentView(R.layout.splash_background)
         try {
             Thread.sleep(4000)
         } catch (e: InterruptedException) {
